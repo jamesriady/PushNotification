@@ -26,6 +26,7 @@ window.Echo = new Echo({
 })
 
 console.log(process.env.MIX_PUSHER_APP_KEY)
+console.log("hello")
 
 axios.interceptors.request.use(
 	config => {
