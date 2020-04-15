@@ -25,9 +25,6 @@ window.Echo = new Echo({
 	forceTLS: true
 })
 
-console.log(process.env.MIX_PUSHER_APP_KEY)
-console.log("hello")
-
 axios.interceptors.request.use(
 	config => {
 	  config.headers['X-Socket-ID'] = window.Echo.socketId()
